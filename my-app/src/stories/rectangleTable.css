@@ -1,0 +1,29 @@
+.border-3 {
+  border-width: 3px !important;
+}
+
+.chairHeight {
+  height: 3em;
+}
+.tableHeight {
+  height: 22em;
+}
+
+.tableBorder {
+  border-radius: 3rem !important;
+}
+
+.topChairBorder {
+  border-top-left-radius: 3rem !important;
+  border-top-right-radius: 3rem !important;
+}
+.bottomChairBorder {
+  border-bottom-left-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+}
+
+.tableColor {
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+  height: 22em;
+}

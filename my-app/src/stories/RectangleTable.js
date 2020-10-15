@@ -1,20 +1,87 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './button.css';
+import './rectangleTable.css';
 
 /**
  * Primary UI component for user interaction
  */
-export const RectangleTable = ({ primary, backgroundColor, size, label, ...props }) => {
-    const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, reservationTime, ...props }) => {
+    //const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
     return (
-        <button
-            className= "border rounded btn-secondary"
-            {...props}
-        >
-            {label}
-        </button>
+        <div>
+            <div>
+                <div className="row">
+                    <div className="col">
+                        <div className="row">
+                            <div className="col-6 m-auto bg-primary  topChairBorder chairHeight">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                    <div className="row">
+                            <div className="col-6 m-auto bg-primary  topChairBorder chairHeight">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                    
+            </div>
+    
+            <div
+                className= "tableBorder bg-secondary tableHeight"
+            >
+                <div className="row">
+                    <div className="col-6">
+                        <div className="row">
+                            {tableID}
+                        </div>
+                        <div className="row">
+                            {partyName}
+                        </div>
+                        
+                    </div>
+                    <div className="col-5">
+                        
+                    </div>
+                    <div className="col-1 bg-warning tableColor">
+                        
+                    </div>
+
+                </div>
+
+            
+                
+            </div>
+        
+            <div>
+                <div className="row">
+                    <div className="col">
+                        <div className="row">
+                            <div className="col-6 m-auto bg-primary  bottomChairBorder chairHeight">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="row">
+                            <div className="col-6 m-auto bg-primary  bottomChairBorder chairHeight">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                    
+            </div>
+
+            
+        </div>
     );
 };
 
@@ -22,28 +89,29 @@ RectangleTable.propTypes = {
     /**
      * Is this the principal call to action on the page?
      */
-    primary: PropTypes.bool,
+    tableID: PropTypes.string,
     /**
      * What background color to use
      */
-    backgroundColor: PropTypes.string,
+    numOfChairs: PropTypes.number,
     /**
      * How large should the button be?
      */
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
+    partyName: PropTypes.string,
     /**
      * Button contents
      */
-    label: PropTypes.string.isRequired,
+    occupancyStatus: PropTypes.string,
     /**
      * Optional click handler
      */
-    onClick: PropTypes.func,
+    reservationTime: PropTypes.Date(),
 };
 
 RectangleTable.defaultProps = {
-    backgroundColor: null,
-    primary: false,
-    size: 'medium',
-    onClick: undefined,
+    tableID:"T1",
+    numOfChairs:4,
+    partyName:"Null",
+    occupancyStatus:"Vacant",
+    reservationTime:Date.now()
 };
