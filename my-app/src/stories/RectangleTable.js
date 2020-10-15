@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import './button.css';
 
 /**
@@ -8,12 +9,12 @@ import './button.css';
 export const RectangleTable = ({ primary, backgroundColor, size, label, ...props }) => {
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
     return (
-        <div
-            className= "border rounded"
+        <button
+            className= "border rounded btn-secondary"
             {...props}
         >
             {label}
-        </div>
+        </button>
     );
 };
 
