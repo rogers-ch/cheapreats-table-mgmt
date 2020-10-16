@@ -7,21 +7,21 @@ import './rectangleTable.css';
  * Primary UI component for user interaction
  */
 export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, reservationTime, ...props }) => {
-    //const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
     return (
         <div>
             <div>
                 <div className="row">
                     <div className="col">
                         <div className="row">
-                            <div className="col-6 m-auto bg-primary  topChairBorder chairHeight">
+                            <div className="col-6 m-auto bg-primary topChairBorder chairHeight">
                                 
                             </div>
                         </div>
                     </div>
                     <div className="col">
                     <div className="row">
-                            <div className="col-6 m-auto bg-primary  topChairBorder chairHeight">
+                            <div className="col-6 m-auto bg-primary topChairBorder chairHeight">
                                 
                             </div>
                         </div>
@@ -87,23 +87,23 @@ export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatu
 
 RectangleTable.propTypes = {
     /**
-     * Is this the principal call to action on the page?
+     * The unique identifier for the table
      */
     tableID: PropTypes.string,
     /**
-     * What background color to use
+     * The number of chairs at the table
      */
     numOfChairs: PropTypes.number,
     /**
-     * How large should the button be?
+     * The name of the party assigned to the table
      */
     partyName: PropTypes.string,
     /**
-     * Button contents
+     * The occupancy status for the table
      */
     occupancyStatus: PropTypes.string,
     /**
-     * Optional click handler
+     * The seating/reservation time for the party at the table
      */
     reservationTime: PropTypes.Date(),
 };
