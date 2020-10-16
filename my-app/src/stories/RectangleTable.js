@@ -46,7 +46,7 @@ export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatu
             <div>
                 <div className="row m-0">
                     {[...Array(colNumber)].map((e, i) => 
-                        <div className="col">
+                        <div className="col" key={i}>
                             <div className="row">
                                 <div className="col-6 m-auto bg-secondary topChairBorder chairHeight">
                                     
@@ -93,7 +93,7 @@ export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatu
             <div>
                 <div className="row m-0">
                     {[...Array(colNumber)].map((e, i) => 
-                        <div className="col">
+                        <div className="col" key={i}>
                             <div className="row">
                                 <div className="col-6 m-auto bg-secondary bottomChairBorder chairHeight">
                                     
