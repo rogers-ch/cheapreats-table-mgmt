@@ -11,15 +11,31 @@ export default {
 
 const Template = (args) => <RectangleTable {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-    
+export const TwoTopRectangle = Template.bind({});
+TwoTopRectangle.args = {
     tableID: 'T3',
-    numOfChairs:4,
-    partyName:'Dmytro',
-    reservationTime:new Date(2020,9,15,5,30,0,0),
-    occupancyStatus:'Reserved',
+    numOfChairs: 2,
+    partyName: 'Sarah C.',
+    reservationTime: new Date(2020,9,15,5,30,0,0),
+    occupancyStatus: 'Vacant',
+};
 
+export const FourTopRectangle = Template.bind({});
+FourTopRectangle.args = {
+    tableID: 'T7',
+    numOfChairs: 4,
+    partyName: 'Robert J.',
+    reservationTime: new Date(2020,9,15,12,30,0,0),
+    occupancyStatus: 'Occupied',
+};
+
+export const SixTopRectangle = Template.bind({});
+SixTopRectangle.args = {
+    tableID: 'T10',
+    numOfChairs: 6,
+    partyName: 'Michael V.',
+    reservationTime: new Date(2020,9,15,9,30,0,0),
+    occupancyStatus: 'Reserved',
 };
 
 
