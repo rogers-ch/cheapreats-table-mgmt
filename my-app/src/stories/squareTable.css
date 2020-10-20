@@ -3,22 +3,21 @@
 }
 
 .chairHeight {
-  height: 3em;
-}
-.tableHeight {
-  height: 22em;
+  height: 2em;
+  width: 10em;
 }
 
-.tableWidth2 {
-  width: 22em;
+.chairSpacing {
+  margin-left: 7em;
 }
 
-.tableWidth4 {
-  width: 44em;
+.marginSide {
+  margin-top: 5em;
 }
 
-.tableWidth6 {
-  width: 66em;
+.chairWidth {
+  width: 2em;
+  height: 10em;
 }
 
 .tableBorder {
@@ -34,8 +33,17 @@
   border-bottom-right-radius: 3rem !important;
 }
 
+.leftChairBorder {
+  border-top-left-radius: 3rem !important;
+  border-bottom-left-radius: 3rem !important;
+}
+
+.rightChairBorder {
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+}
+
 .tableColor {
   border-top-right-radius: 3rem !important;
   border-bottom-right-radius: 3rem !important;
-  height: 22em;
 }
