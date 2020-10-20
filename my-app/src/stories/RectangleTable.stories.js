@@ -12,6 +12,7 @@ export default {
 const Template = (args) => <RectangleTable {...args} />;
 
 export const TwoTopRectangle = Template.bind({});
+
 TwoTopRectangle.args = {
     tableID: 'T3',
     numOfChairs: 2,

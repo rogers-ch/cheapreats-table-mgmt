@@ -107,6 +107,7 @@ export const RectangleTable = ({ tableID, partyName, numOfChairs, occupancyStatu
                 
                     
             </div>
+            
 
             
         </div>
