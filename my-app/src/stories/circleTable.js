@@ -7,7 +7,7 @@ import './circleTable.css';
  * Primary UI component for user interaction
  */
 export const CircleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, reservationTime, ...props }) => {
-    //const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
     let occupancyColor = getOccupancyColor(occupancyStatus);
 
     function getOccupancyColor (status) {
@@ -24,7 +24,6 @@ export const CircleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, 
 
     return (
         <div>
-
             <div
                 className= "tableHeight border-3"
             >

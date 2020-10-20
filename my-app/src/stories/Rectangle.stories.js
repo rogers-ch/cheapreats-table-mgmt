@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { RectangleTable } from './RectangleTable';
 
 export default {
-    title: 'Example/RectangleTable',
+    title: 'Component/RectangleTable',
     component: RectangleTable,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -15,7 +15,6 @@ const Template = (args) => <RectangleTable {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    primary:false,
     tableID: "T3",
     numOfChairs:4,
     partyName:"Dmytro",
