@@ -14,6 +14,7 @@ export default {
 const Template = (args) => <CircleTable {...args} />;
 
 export const Primary = Template.bind({});
+
 Primary.args = {
     tableID: "T4",
     numOfChairs:4,
