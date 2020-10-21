@@ -1,9 +1,9 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.css'
 import '../css/App.css';
-import { ButtonComponent } from './ButtonComponent';
+import {ButtonComponent} from "./ButtonComponent";
 
-function App() {
+const App = () => {
 
   return (
     <div className="App">
@@ -12,8 +12,8 @@ function App() {
       <p>Seat customers, make reservations, track orders,</p>
       <p>and get a birds-eye view of your dining areas from one simple interface!</p>
       <p>Click below for more information!</p>
-      <ButtonComponent />
-      <ButtonComponent />
+      <ButtonComponent userType="Restaurant Owner"  />
+      <ButtonComponent userType="Restaurant Customer"  />
     </div>
   );
 }
