@@ -13,8 +13,8 @@ function MainContainer() {
       <p>Seat customers, make reservations, track orders,</p>
       <p>and get a birds-eye view of your dining areas from one simple interface!</p>
       <p>Click below for more information!</p>
-      <ButtonComponent />
-      <ButtonComponent />
+      <ButtonComponent userType="Restaurant Owner" />
+      <ButtonComponent userType="Restaurant Customer" />
     </div>
   );
 }
