@@ -10,7 +10,7 @@ export const ButtonComponent: React.FC = ({
 }: IButtonComponent) => {
     return (
         <div>
-            <button>{userType}</button>
+            <button className="btn btn-danger btn-lg border-light rounded" >{userType}</button>
         </div>
     );
 };
