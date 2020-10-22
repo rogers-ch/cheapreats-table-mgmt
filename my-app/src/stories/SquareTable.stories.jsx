@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import { SquareTable } from './SquareTable.js';
+import { SquareTable } from './SquareTable.jsx';
 export default {
     title: 'Components/SquareTable',
     component: SquareTable,

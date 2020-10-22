@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../logo.svg';
 import '../css/App.css';
 import { ButtonComponent } from './ButtonComponent';
+import Footer from './Footer';
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
       <p>Click below for more information!</p>
       <ButtonComponent />
       <ButtonComponent />
+      <Footer />
     </div>
   );
 }
