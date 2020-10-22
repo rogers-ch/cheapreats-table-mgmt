@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import { ButtonComponent } from './ButtonComponent';
+import ButtonModal from "./ButtonModal"
 
 
 function MainContainer() {
@@ -14,12 +15,13 @@ function MainContainer() {
       <p>Click below for more information!</p>
         <div className="d-flex justify-content-center">
             <div className="pr-1">
-                <ButtonComponent userType="Restaurant Owner" />
+                <ButtonModal userType='Restaurant Owner' text="Owner.txt" />
             </div>
             <div className="pl-1">
-                <ButtonComponent userType="Restaurant Customer" />
+                <ButtonModal userType='Restaurant Customer' text="Customer.txt"/>
             </div>
         </div>
+
     </div>
   );
 }
