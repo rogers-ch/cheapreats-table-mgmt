@@ -1,5 +1,4 @@
 import React from 'react';
-
 import '../css/App.css';
 import { ButtonComponent } from './ButtonComponent';
 
@@ -13,8 +12,14 @@ function MainContainer() {
       <p>Seat customers, make reservations, track orders,</p>
       <p>and get a birds-eye view of your dining areas from one simple interface!</p>
       <p>Click below for more information!</p>
-      <ButtonComponent userType="Restaurant Owner" />
-      <ButtonComponent userType="Restaurant Customer" />
+        <div className="d-flex justify-content-center">
+            <div className="pr-1">
+                <ButtonComponent userType="Restaurant Owner" />
+            </div>
+            <div className="pl-1">
+                <ButtonComponent userType="Restaurant Customer" />
+            </div>
+        </div>
     </div>
   );
 }
