@@ -25,7 +25,7 @@ export const CircleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, 
     return (
         <div>
             <div
-                className= "tableHeight border-3"
+                className= "circleTableHeight border-3"
             >
                 <div className="row m-0">
                     <div className="col-6 p-0">

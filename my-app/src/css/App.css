@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+p{
+  font-family: 'Lato', sans-serif;
+  color: rgb(140, 140, 140);
+}
+
+h1{
+  font-family: 'Lato', sans-serif;
+}
+
+button{
+  font-family: 'Lato', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav{
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.pt-6 {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    background-color: rgb(245, 245, 245);
 }

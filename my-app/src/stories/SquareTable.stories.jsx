@@ -24,6 +24,7 @@ Secondary.args = {
     occupancyStatus:'Reserved',
 };
 
+
 export const Large = Template.bind({});
 Large.args = {
     tableID: 'T4',
