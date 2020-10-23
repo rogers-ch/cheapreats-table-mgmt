@@ -2,16 +2,12 @@ import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 
-
-
-
 function ButtonModal(props) {
     const [show, setShow] = useState(false);
     const [dataFirst, setDataFirst] = useState('');
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
 
     useEffect(() => {
         fetch('./data/'+props.text)
@@ -34,16 +30,22 @@ function ButtonModal(props) {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal title</Modal.Title>
+                    <Modal.Title>{props.userType}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    {dataFirst}
+                    <div>
+                        <div>
+                            {dataFirst}
+                        </div>
+                        <div>
+                            <img src={props.image} alt="image of table design" ></img>
+                        </div>
+                    </div>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary">Understood</Button>
                 </Modal.Footer>
             </Modal>
         </>

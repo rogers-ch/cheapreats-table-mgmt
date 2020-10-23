@@ -2,7 +2,8 @@ import React from 'react';
 import '../css/App.css';
 import { ButtonComponent } from './ButtonComponent';
 import ButtonModal from "./ButtonModal"
-
+import DinningRoomImage from "../images/DinningRoomImage.png"
+import SquareTableImage from '../images/SquareTableImage.png'
 
 function MainContainer() {
 
@@ -15,10 +16,10 @@ function MainContainer() {
       <p>Click below for more information!</p>
         <div className="d-flex justify-content-center">
             <div className="pr-1">
-                <ButtonModal userType='Restaurant Owner' text="Owner.txt" />
+                <ButtonModal userType='Restaurant Owner' text="Owner.txt" image={DinningRoomImage} />
             </div>
             <div className="pl-1">
-                <ButtonModal userType='Restaurant Customer' text="Customer.txt"/>
+                <ButtonModal userType='Restaurant Customer' text="Customer.txt" image={SquareTableImage} />
             </div>
         </div>
 
