@@ -6,6 +6,7 @@ interface IButtonComponent{
 
 export const ButtonComponent: React.FC = ({
     userType = "Hello",
+
     ...props
 }: IButtonComponent) => {
     return (
