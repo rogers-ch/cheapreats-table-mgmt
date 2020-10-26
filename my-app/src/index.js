@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    Date submitted (v1):       10/26/2020
+    File:                      Index.js
+    File Description:          The main entry point for the application. This file was created by Create React App.
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';

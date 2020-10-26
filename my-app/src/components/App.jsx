@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    Date submitted (v1):       10/26/2020
+    File:                      App.jsx
+    File Description:          This component is main entry point for the CheaprEats Table Management homepage.
+*/
+
 import React from 'react';
 import '../css/App.css';
 
