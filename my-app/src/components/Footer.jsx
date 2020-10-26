@@ -4,13 +4,27 @@ import styled from "styled-components";
 
 
 import '../css/App.css';
+import logoForCheaprEats from "../images/logoForCheaprEats.png";
 
 function Footer() {
     const color={
-        color:'red'
+        color:'red',
+        'font-size': '1.25rem',
+        'font-family':'Lato, sans-serif'
     }
+
+    const img = {
+        width: '20px',
+        height: '20px'
+    }
+
     const Link = styled.a`
       color: gray;
+      
+      font-family:Lato, sans-serif;
+      
+      font-size: 0.85rem;
+      
 
       &:hover {
         color: red;
@@ -20,13 +34,15 @@ function Footer() {
 
 
     return (
-        <footer>
+        <footer className='m-3'>
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-
-                        <h4 style={color}>CheaprEats</h4>
-                        <p>Order now, pickup later!</p>
+                        <div className='float-left'>
+                            <img className='d-inline-block' src={ logoForCheaprEats } alt="logo For CheaprEats " style={ img }></img>
+                            <h4 className='d-inline-block' style={color} >CheaprEats</h4>
+                            <p>Order now, pickup later!</p>
+                        </div>
                     </div>
 
                     <div className="col-2">
