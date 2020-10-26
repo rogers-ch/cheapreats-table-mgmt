@@ -1,3 +1,10 @@
+/*
+    Created by:                Corey Rogers
+    Date submitted (v1):       10/26/2020
+    File:                      RectangleTable.js
+    File Description:          Rectangle table in horizontal orientation. Resizable based on number of chairs.
+*/
+
 import React from 'react';
 
 import './rectangleTable.css';

@@ -1,3 +1,10 @@
+/*
+    Created by:                Corey Rogers
+    Date submitted (v1):       10/26/2020
+    File:                      RectangleTable.stories.js
+    File Description:          The Storybook file for the RectangleTable component.
+*/
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 //import { createStoryTitle } from '../Constants';

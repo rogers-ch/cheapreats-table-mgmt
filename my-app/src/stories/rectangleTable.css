@@ -1,3 +1,10 @@
+/*
+    Created by:                Corey Rogers
+    Date submitted (v1):       10/26/2020
+    File:                      rectangleTable.css
+    File Description:          The css for the RectangleTable component.
+*/
+
 .border-3 {
   border-width: 3px !important;
 }
