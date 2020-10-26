@@ -1,2 +1,1 @@
-As a customer, You will be able to see an outline of the restaurant and all the tables you can pick from.
-And when you are ready you will be able to make your reservation at the click of a button.
+As a CheaprEats customer, our new Table Management system will seamlessly integrate with your existing CheaprEats app so you can view restaurant floorplans and make reservations for specific tables in your favorite restaurant with the click of a button!
