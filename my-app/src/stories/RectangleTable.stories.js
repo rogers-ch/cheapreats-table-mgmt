@@ -17,7 +17,6 @@ export default {
     // Use createStoryTitle() with react-ui-library
     //title: createStoryTitle('RectangleTable'),
     component: RectangleTable,
-
 };
 
 const Template = (args) => <RectangleTable {...args} />;
