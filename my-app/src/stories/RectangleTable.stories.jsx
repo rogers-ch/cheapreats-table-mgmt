@@ -6,7 +6,6 @@
 */
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css'
 //import { createStoryTitle } from '../Constants';
 
 import { RectangleTable } from './RectangleTable';
