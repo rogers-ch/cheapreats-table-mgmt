@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css'
-import { SquareTable } from './SquareTable.jsx';
+
+import { SquareTable } from './SquareTable';
 export default {
     title: 'Components/SquareTable',
     component: SquareTable,
@@ -31,7 +31,7 @@ Large.args = {
     numOfChairs:12,
     partyName:'Corey',
     reservationTime:new Date(2020,10,15,16,30,0,0),
-    occupancyStatus:'info',
+    occupancyStatus:'Occupied',
 };
 
 
