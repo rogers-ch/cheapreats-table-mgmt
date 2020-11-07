@@ -5,6 +5,7 @@ import {IRectangleTable} from "./RectangleTable";
 /**
  * Primary UI component for user interaction
  */
+
 export interface ICircleTable { /**
      * The unique identifier for the table
      */
@@ -26,8 +27,6 @@ export interface ICircleTable { /**
      */
     reservationTime: Date,
 }
-
-
 
 export const CircleTable: React.FC<ICircleTable>
     = ({
