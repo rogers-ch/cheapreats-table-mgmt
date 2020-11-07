@@ -15,22 +15,26 @@ export interface IRectangleTable {
      * The unique identifier for the table
      */
     tableID: string,
-        /**
-         * The number of chairs at the table
-         */
-        numOfChairs: number,
-        /**
-         * The name of the party assigned to the table
-         */
-        partyName: string,
-        /**
-         * The occupancy status for the table
-         */
-        occupancyStatus: string,
-        /**
-         * The seating/reservation time for the party at the table
-         */
-        reservationTime: Date,
+    /**
+     * The number of chairs at the table
+     */
+    numOfChairs: number,
+    /**
+     * The name of the party assigned to the table
+     */
+    partyName: string,
+    /**
+     * The occupancy status for the table
+     */
+    occupancyStatus: string,
+    /**
+     * The seating/reservation time for the party at the table
+     */
+    reservationTime?: Date,
+    /**
+     * The size for the component relative to the parent
+     */
+    relativeSize: number,
 }
 
 /**
@@ -43,6 +47,8 @@ export const RectangleTable: React.FC<IRectangleTable>
            partyName = 'Null',
            occupancyStatus = 'Vacant',
            reservationTime = Date.now(),
+           relativeSize = 1.0,
+
            ...props
        }) => {
 
@@ -62,65 +68,65 @@ export const RectangleTable: React.FC<IRectangleTable>
     const colNumber = numOfChairs / 2;
 
     const StyledTable = styled.div`
-            width: ${numOfChairs * 11}em;
+            width: ${numOfChairs * 11 * relativeSize}em;
         `;
 
     const TopChair = styled.div`
-            height: 3em;
-            border-top-left-radius: 3rem !important;
-            border-top-right-radius: 3rem !important;
+            height: ${3 * relativeSize}em;
+            border-top-left-radius: ${3 * relativeSize}rem;
+            border-top-right-radius: ${3 * relativeSize}rem;
             flex: 0 0 50%;
             max-width: 50%;
-            background-color: #6c757d !important;
-            margin: auto !important;
+            background-color: #6c757d;
+            margin: auto;
         `;
 
     const TableBody = styled.div`
-            height: 22em;
-            border-radius: 3rem !important;
-            background-color: #6c757d !important;
-            margin: .25rem !important;
+            height: ${22 * relativeSize}em;
+            border-radius: ${3 * relativeSize}rem;
+            background-color: #6c757d;
+            margin: ${.25 * relativeSize}rem;
             
         `;
 
     const BottomChair = styled.div`
-            height: 3em;
-            border-bottom-left-radius: 3rem !important;
-            border-bottom-right-radius: 3rem !important;
+            height: ${3 * relativeSize}em;
+            border-bottom-left-radius: ${3 * relativeSize}rem;
+            border-bottom-right-radius: ${3 * relativeSize}rem;
             flex: 0 0 50%;
             max-width: 50%;
-            background-color: #6c757d !important;
-            margin: auto !important;
+            background-color: #6c757d;
+            margin: auto;
         `;
 
     const ColorBand = styled.div`
-        border-top-right-radius: 3rem !important;
-        border-bottom-right-radius: 3rem !important;
-        height: 22em;
+        border-top-right-radius: ${3 * relativeSize}rem;
+        border-bottom-right-radius: ${3 * relativeSize}rem;
+        height: ${22 * relativeSize}em;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
         position: relative;
         width: 100%;
-        background-color: ${occupancyColor} !important;
+        background-color: ${occupancyColor};
     `;
 
     const Row = styled.div`
         display: flex;
         flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: ${15 * relativeSize}px;
+        margin-left: ${15 * relativeSize}px;
     `;
 
     const RowMargin0 = styled(Row)`
-        margin: 0 !important;  
+        margin: 0;  
     `;
 
     const RowM0H25 = styled(RowMargin0)`
-        height: 25% !important;  
+        height: 25%;  
     `;
 
     const RowM0H50 = styled(RowMargin0)`
-        height: 50% !important;  
+        height: 50%;  
     `;
 
     const Col = styled.div`
@@ -149,23 +155,25 @@ export const RectangleTable: React.FC<IRectangleTable>
         color: #f8f9fa !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        margin-top: 1rem !important;
+        margin-top: ${1 * relativeSize}rem !important;
+        text-align: left;
+        font-size: .8em;
     `;
 
     const Col6MxAutoMt5 = styled(Col6P0)`
         padding-right: 15px;
         padding-left: 15px;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-top: 3rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: ${3 * relativeSize}rem;
     `;
 
     const TextWhiteDiv = styled.div`
-        color: #fff !important;
+        color: #fff;
     `;
 
     const TextOccupancyColor = styled.div`
-        color: ${occupancyColor} !important;
+        color: ${occupancyColor};
     `;
 
 
@@ -203,17 +211,12 @@ export const RectangleTable: React.FC<IRectangleTable>
                         <RowM0H25>
                             <Col6MxAutoMt3TxtLt>
                                 {tableID}
-                            </Col6MxAutoMt3TxtLt>
-                        </RowM0H25>
-                        <RowM0H25 />
-                        <RowM0H50>
-                            <Col6MxAutoMt5>
                                 <TextWhiteDiv>{partyName}</TextWhiteDiv>
                                 <TextOccupancyColor>
                                     {occupancyStatus}
                                 </TextOccupancyColor>
-                            </Col6MxAutoMt5>
-                        </RowM0H50>
+                            </Col6MxAutoMt3TxtLt>
+                        </RowM0H25>
                     </Col6P0>
                     <Col4P0 />
                     <ColorBand />

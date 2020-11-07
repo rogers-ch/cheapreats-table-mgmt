@@ -8,9 +8,6 @@
 import React from 'react';
 import '../css/App.css';
 
-import DinningRoomImage from "../images/DinningRoomImage.png"
-import SquareTableImage from '../images/SquareTableImage.png'
-
 function MainContainer() {
 
   return (
@@ -21,6 +18,7 @@ function MainContainer() {
       <p>Seat customers, make reservations, track orders,</p>
       <p>and get a birds-eye view of your dining areas from one simple interface!</p>
       <p>Click below for more information!</p>
+
     </div>
   );
 }
