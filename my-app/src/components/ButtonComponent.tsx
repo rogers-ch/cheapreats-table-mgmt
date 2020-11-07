@@ -5,7 +5,7 @@ interface IButtonComponent{
     userType: string,
 }
 //This returns the button with what you want the button to say, with all the styles added
-export const ButtonComponent: React.FC = ({
+export const ButtonComponent: React.FC <IButtonComponent> = ({
     //default userType
     userType = "Hello",
     ...props

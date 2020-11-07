@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+ .navHeading{
+     padding-top: 2.5rem;
+ }
+
+.NavBarFont {
+    font-size: 10px;
+}
+
+.buttonWidth{
+    width: 80%;
+}
