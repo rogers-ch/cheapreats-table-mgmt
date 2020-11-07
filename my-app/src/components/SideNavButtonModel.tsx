@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 
-function ButtonModal(props) {
+function SideNavButtonModal() {
 
     //const variables for state
     const [show, setShow] = useState(false);
@@ -11,19 +11,13 @@ function ButtonModal(props) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     //Grabs the .txt files in data folder
-    useEffect(() => {
-        fetch('./data/'+props.text)
-            .then(response => response.text())
-            .then(text => {
-                setDataFirst(text);
-            });
-    }, []);
+
     // Main model component that is returned
     return (
         <>
             <Button className="btn-danger btn-sm border-light rounded NavBarFont buttonWidth" onClick={handleShow}>
                 {/* prop for the button component. This is the button on the main page that when clicked brings up the model*/}
-                {props.userType}
+                View Demo
             </Button>
 
             <Modal
@@ -33,26 +27,18 @@ function ButtonModal(props) {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.userType}</Modal.Title>
+                    <Modal.Title>View Demo</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div>
-                        <div>
-                            {/*This prop is the data from the .txt file*/}
-                            {dataFirst}
-                        </div>
-                        <div>
-                            {/*Image prop*/}
-                            <img src={props.image} alt="image of table design" ></img>
-                        </div>
+
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-
                 </Modal.Footer>
             </Modal>
         </>
     );
 }
 
-export default ButtonModal;
+export default SideNavButtonModal;

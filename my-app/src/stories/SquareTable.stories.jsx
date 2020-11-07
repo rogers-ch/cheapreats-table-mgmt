@@ -15,6 +15,7 @@ Primary.args = {
     occupancyStatus:'Vacant',
 };
 
+
 export const Secondary = Template.bind({});
 Secondary.args = {
     tableID: 'T2',

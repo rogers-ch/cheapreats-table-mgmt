@@ -61,3 +61,25 @@ nav{
     padding-bottom: 1rem;
     background-color: rgb(245, 245, 245);
 }
+
+.canvas {
+
+  width: 1000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.colForRightSide{
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.colForSideBar{
+  background-color: #CFD8DC;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+
+}
