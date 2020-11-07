@@ -6,7 +6,7 @@ import './circleTable.css';
 /**
  * Primary UI component for user interaction
  */
-export const CircleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, reservationTime, ...props }) => {
+export const CircleTable = ({ tableID, partyName, numOfChairs, occupancyStatus, ...props }) => {
 
     let occupancyColor = getOccupancyColor(occupancyStatus);
 
@@ -67,7 +67,7 @@ CircleTable.propTypes = {
 
     occupancyStatus: PropTypes.string,
 
-    reservationTime: PropTypes.Date(),
+
 };
 
 CircleTable.defaultProps = {
@@ -75,5 +75,4 @@ CircleTable.defaultProps = {
     numOfChairs:4,
     partyName:"Null",
     occupancyStatus:"Vacant",
-    reservationTime:Date.now()
 };

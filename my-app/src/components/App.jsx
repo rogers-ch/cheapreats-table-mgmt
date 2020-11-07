@@ -12,6 +12,7 @@ import '../css/App.css';
 import MainContainer from './MainContainer';
 import Nav from './Nav';
 import Footer from './Footer';
+import CanvasDemo from "./CanvasDemo";
 
 function App () {
 

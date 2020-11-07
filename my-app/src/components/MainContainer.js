@@ -7,9 +7,7 @@
 
 import React from 'react';
 import '../css/App.css';
-import ButtonModal from "./ButtonModal"
-import DinningRoomImage from "../images/DinningRoomImage.png"
-import SquareTableImage from '../images/SquareTableImage.png'
+import CanvasDemo from "./CanvasDemo";
 
 function MainContainer() {
 
@@ -20,16 +18,6 @@ function MainContainer() {
       <p>Seat customers, make reservations, track orders,</p>
       <p>and get a birds-eye view of your dining areas from one simple interface!</p>
       <p>Click below for more information!</p>
-        <div className="d-flex justify-content-center">
-
-            {/* ButtonModal components for info buttons */}
-            <div className="pr-1">
-                <ButtonModal userType='Restaurant Owner' text="Owner.txt" image={DinningRoomImage} />
-            </div>
-            <div className="pl-1">
-                <ButtonModal userType='Restaurant Customer' text="Customer.txt" image={SquareTableImage} />
-            </div>
-        </div>
 
     </div>
   );

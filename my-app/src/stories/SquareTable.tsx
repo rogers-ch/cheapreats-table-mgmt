@@ -21,7 +21,11 @@ export interface ISquareTable {
     /**
      * The seating/reservation time for the party at the table
      */
-    reservationTime: Date,
+    reservationTime?: Date,
+    /**
+     * The size for the component relative to the parent
+     */
+    relativeSize: number,
 }
 
 
@@ -35,6 +39,8 @@ export const SquareTable: React.FC<ISquareTable>
            partyName = 'Null',
            occupancyStatus = 'Vacant',
            reservationTime = Date.now(),
+           relativeSize = 1.0,
+
            ...props
        }) => {
     const chairNumOnSide= getChairNumOnSide(numOfChairs);
@@ -66,28 +72,28 @@ export const SquareTable: React.FC<ISquareTable>
 
     //styled componenets
     const TableBody=styled.div`
-        height: ${chairNumOnSide*20}rem;
-        width: ${chairNumOnSide*20}rem;
-        border-radius: 3rem;
+        height: ${chairNumOnSide * 20 * relativeSize}rem;
+        width: ${chairNumOnSide * 20 * relativeSize}rem;
+        border-radius: ${3 * relativeSize}rem;
         background-color: #6c757d;
     `;
 
     const ColorDiv=styled.div`
-        height:${chairNumOnSide*20}rem;
-        width: 3rem;
+        height:${chairNumOnSide * 20 * relativeSize}rem;
+        width: ${3 * relativeSize}rem;
         margin-left:auto;
-        margin-right: .95rem;
-        border-top-right-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+        margin-right: ${0.95 * relativeSize}rem;
+        border-top-right-radius: ${3 * relativeSize}rem;
+        border-bottom-right-radius: ${3 * relativeSize}rem;
         background-color: ${getOccupancyColor(occupancyStatus)};
         `;
 
     const TopChair=styled.div`
-      border-top-left-radius: 3rem;
-      border-top-right-radius: 3rem;
-      height: 2rem;
-      width: 10rem;
-      margin-bottom: 0.25rem;
+      border-top-left-radius: ${3 * relativeSize}rem;
+      border-top-right-radius: ${3 * relativeSize}rem;
+      height: ${2 * relativeSize}rem;
+      width: ${10 * relativeSize}rem;
+      margin-bottom: ${0.25 * relativeSize}rem;
       margin-left: auto;
       margin-right: auto;
       background-color: #6c757d;
@@ -95,23 +101,23 @@ export const SquareTable: React.FC<ISquareTable>
     `;
 
     const LeftChair=styled.div`
-      border-top-left-radius: 3rem;
-      border-bottom-left-radius: 3rem;
-      width: 2rem;
-      height: 10rem;
+      border-top-left-radius: ${3 * relativeSize}rem;
+      border-bottom-left-radius: ${3 * relativeSize}rem;
+      width: ${2 * relativeSize}rem;
+      height: ${10 * relativeSize}rem;
       margin-top:auto;
       margin-bottom: auto;
-      margin-right: 1.25rem;
-      margin-left: 1rem;
+      margin-right: ${1.25 * relativeSize}rem;
+      margin-left: ${1 * relativeSize}rem;
       background-color: #6c757d;
     `;
 
     const SideChairRow=styled.div`
        display: flex;
        flex-wrap: wrap;
-       margin-right: -15px;
-       margin-left: -15px;
-       height: 20rem;
+       margin-right: ${-15 * relativeSize}px;
+       margin-left: ${-15 * relativeSize}px;
+       height: ${20 * relativeSize}rem;
     `;
 
     const ChairCol=styled.div`
@@ -123,22 +129,22 @@ export const SquareTable: React.FC<ISquareTable>
 
 
     const RightChair=styled.div`
-        border-top-right-radius: 3rem;
-        border-bottom-right-radius: 3rem;
-        width: 2rem;
-        height: 10rem;
+        border-top-right-radius: ${3 * relativeSize}rem;
+        border-bottom-right-radius: ${3 * relativeSize}rem;
+        width: ${2 * relativeSize}rem;
+        height: ${10 * relativeSize}rem;
         margin-top:auto;
         margin-bottom: auto;
-        margin-left: 1.25rem;
+        margin-left: ${1.25 * relativeSize}rem;
         background-color: #6c757d;
     `;
 
     const BottomChair=styled.div`
-      border-bottom-left-radius: 3rem;
-      border-bottom-right-radius: 3rem;
-      height: 2rem;
-      width: 10rem;
-      margin-top: 0.25rem;
+      border-bottom-left-radius: ${3 * relativeSize}rem;
+      border-bottom-right-radius: ${3 * relativeSize}rem;
+      height: ${2 * relativeSize}rem;
+      width: ${10 * relativeSize}rem;
+      margin-top: ${0.25 * relativeSize}rem;
       margin-left: auto;
       margin-right: auto;
       background-color: #6c757d;
@@ -147,26 +153,31 @@ export const SquareTable: React.FC<ISquareTable>
     const Row=styled.div`
         display: flex;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: ${-15 * relativeSize}px;
+        margin-left: ${-15 * relativeSize}px;
     `;
 
     const TableInfo=styled.div`
-    color: #f8f9fa;
-    margin-top: 2rem;
-    margin-left: 3rem;
+        margin-top: ${2 * relativeSize}rem;
+        margin-left: ${3 * relativeSize}rem;
+        text-align: left;
     
     `;
 
     const TobBottomRow=styled.div`
         display: flex;
         flex-wrap: wrap;
-        width: ${chairNumOnSide*20}rem;
-        margin-left: 1rem;
+        width: ${chairNumOnSide * 20 * relativeSize}rem;
+        margin-left: ${1.6 * relativeSize}rem;
     `;
 
     const Status=styled.div`
       color: ${getOccupancyColor(occupancyStatus)};
+    `;
+
+    const StyledParagraph=styled.div`
+        color: #fff;
+        font-size: 0.8em;
     `;
 
     return (
@@ -200,11 +211,11 @@ export const SquareTable: React.FC<ISquareTable>
                     <TableBody>
                         <Row>
                             <TableInfo>
-                                <p>
+                                <StyledParagraph>
                                     {tableID}<br></br>
                                     {partyName} <br></br>
                                     <Status>{occupancyStatus}</Status><br></br>
-                                </p>
+                                </StyledParagraph>
                                 
                             </TableInfo>
 
