@@ -7,11 +7,11 @@
 
 import React from 'react';
 import '../css/App.css';
-import CanvasDemo from "./CanvasDemo";
 
 function MainContainer() {
 
   return (
+
     <div className="pt-6">
       <h1>Table Management Coming Soon!</h1>
       <p>-Comprehensive restaurant management made easy-</p>
