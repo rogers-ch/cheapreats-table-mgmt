@@ -31,7 +31,9 @@ function SideNavButtonModal() {
                     <Modal.Title>View Demo</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                 <CanvasDemo />
+
+                    <CanvasDemo />
+
                 </Modal.Body>
                 <Modal.Footer>
                 </Modal.Footer>

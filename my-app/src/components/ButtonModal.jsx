@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
+import '../css/buttonModal.css';
 
 function ButtonModal(props) {
 
