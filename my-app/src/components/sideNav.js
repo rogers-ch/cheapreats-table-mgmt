@@ -22,14 +22,8 @@ function SideNav() {
                     </nav>
                     <div className="sidebar-container">
                         <div className="pl-2">
-                         <SideNavButtonModal />
+                            <SideNavButtonModal />
                         </div>
-                            <div className="pl-2">
-                                <ButtonModal userType='Restaurant Owner' text="Owner.txt" image={DinningRoomImage} />
-                            </div>
-                            <div className="pl-2">
-                                <ButtonModal userType='Restaurant Customer' text="Customer.txt" image={SquareTableImage} />
-                            </div>
                     </div>
                 </div>
             </div>

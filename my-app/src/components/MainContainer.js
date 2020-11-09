@@ -13,12 +13,11 @@ function MainContainer() {
   return (
 
     <div className="pt-6">
-      <h1>Table Management Coming Soon!</h1>
-      <p>-Comprehensive restaurant management made easy-</p>
-      <p>Seat customers, make reservations, track orders,</p>
-      <p>and get a birds-eye view of your dining areas from one simple interface!</p>
-      <p>Click below for more information!</p>
-
+        <h1>Table Management Coming Soon!</h1><hr></hr>
+      <div className="styleFont">Comprehensive restaurant management made easy.</div>
+      <div className="styleFont">Seat customers, make reservations, track orders,</div>
+      <div className="styleFont">and get a birds-eye view of your dining areas from one simple interface!</div>
+      <div className="styleFont">To see a demo  of a restaurant design click to the left.</div>
     </div>
   );
 }
