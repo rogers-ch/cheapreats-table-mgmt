@@ -26,7 +26,7 @@ function App () {
                 <Nav />
                 <MainContainer />
             </div>
-            <CustomerInfo />
+
         </div>
 
         <Footer />
