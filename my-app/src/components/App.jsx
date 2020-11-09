@@ -6,10 +6,10 @@
 */
 import React from 'react';
 import '../css/App.css';
-
 import MainContainer from './MainContainer';
 import Nav from './Nav';
 import Footer from './Footer';
+import CustomerInfo from './CustomerInfo'
 
 import SideNav from "./sideNav";
 
@@ -26,7 +26,9 @@ function App () {
                 <Nav />
                 <MainContainer />
             </div>
+
         </div>
+
         <Footer />
     </div>
   );
