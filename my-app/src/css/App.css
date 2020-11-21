@@ -6,6 +6,20 @@
   font-family: 'Cantata One', serif;
 }
 
+.rectangleTwoTopWidth{
+  width: 105px;
+}
+
+.squareEightTopWidth{
+  width: 230px;
+}
+.rectangleFourTopWidth{
+  width: 230px;
+}
+.rectangleSixthTopWidth{
+  width: 430px;
+}
+
 .styleFont{
   font-family: 'Cantata One', serif;
   color: rgb(140, 140, 140);
