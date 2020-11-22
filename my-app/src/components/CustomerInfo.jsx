@@ -1,5 +1,5 @@
 import React from "react";
-import DiningRoomImage from '../images/DiningRoomImage.png';
+import DiningRoomImage from '../images/PictureOfDemo.png';
 
 function CustomerInfo(){
     return(
