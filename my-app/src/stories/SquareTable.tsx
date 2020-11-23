@@ -172,8 +172,8 @@ export const SquareTable: React.FC<ISquareTable>
     `;
 
     const Status=styled.div`
-       color: #fff;
-      font-weight: bold;
+        color: white;
+        font-weight: bold;
     `;
 
     const StyledParagraph=styled.div`

@@ -9,6 +9,7 @@ import '../css/App.css';
 import MainContainer from './MainContainer';
 import Nav from './Nav';
 import Footer from './Footer';
+import DraggableCanvas from './DraggableCanvas';
 import CustomerInfo from './CustomerInfo'
 
 import SideNav from "./sideNav";

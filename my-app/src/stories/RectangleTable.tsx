@@ -173,8 +173,8 @@ export const RectangleTable: React.FC<IRectangleTable>
     `;
 
     const TextOccupancyColor = styled.div`
+        color: white;
         font-weight: bold;
-        color: #fff;
     `;
 
 

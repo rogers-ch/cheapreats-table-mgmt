@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 import CanvasDemo from "./CanvasDemo";
+import DraggableCanvas from "./DraggableCanvas";
 
 function SideNavButtonModal() {
 
@@ -28,13 +29,13 @@ function SideNavButtonModal() {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Sample Dining Room View</Modal.Title>
+                    <Modal.Title>CheaprEats Table Management System Demo</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
 
-                    <CanvasDemo />
+                    <DraggableCanvas />
                     <div className="p-2">
-                        <h5 className="text-center pt-4">Table Management Features</h5>
+                        <h5 className="text-center pt-4">Future Table Management Features:</h5>
                         <ul>
                             <li className="font">Build your restaurant with tables of all shapes and sizes.</li>
                             <li className="font">Easily edit your design to match changes in your dining room.</li>
