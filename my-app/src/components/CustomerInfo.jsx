@@ -1,24 +1,27 @@
 import React from "react";
-import DiningRoomImage from '../images/PictureOfDemo.png';
+import DiningRoomLightBackground from '../images/DiningRoomLightBackground.png';
 
 function CustomerInfo(){
     return(
         <div>
             <hr></hr>
-            <h4>Customized Management for Restaurant Owners</h4>
+            <h4 className="py-4">Customized Management for Restaurant Owners</h4>
             <div className="styleFont customerInfoStyle" >
 
-                <p>CheaprEats Table Management gives you the power to manage your entire restaurant from a
-                    single dashboard!</p>
+                <ul>
+                    <li>CheaprEats Table Management gives you the power to manage your entire restaurant from a
+                        single dashboard!</li><br/>
 
-                <p>Design your dining areas, seat customers, make and track reservations,
-                    and record orders with ease. </p>
+                    <li>Design your dining areas, seat customers, make and track reservations,
+                        and record orders with ease. </li><br/>
 
-                <p>Our Table Management app lets you track customer interactions
-                    from end to end, so you can track your business information in a single location.</p>
+                    <li>Our Table Management app lets you track customer interactions
+                        from end to end, so you can track your business information in a single location.</li>
+                    <br/>
+                </ul>
 
             </div>
-            <img className="py-4 w-75" src={DiningRoomImage}  alt="Image of dinning room table" />
+            <img className="py-4 w-75" src={DiningRoomLightBackground}  alt="Dining Room Demo with Five Tables" />
         </div>
     );
 }

@@ -4,7 +4,7 @@ import '../css/canvas.css';
 
 function CanvasDemo() {
     return(
-        <div className=' bg-dark border border-dark canvas'>
+        <div className='bg-transparent shadow-lg rounded canvas'>
 
             {/* Row 1 */}
             <div className="row py-3 pl-3">
