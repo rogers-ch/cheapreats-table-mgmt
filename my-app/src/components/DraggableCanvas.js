@@ -46,14 +46,13 @@ export class DraggableCanvas extends React.Component {
         const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
         const {deltaPosition, controlledPosition} = this.state;
         return (
-            <div className="pb-3">
-                <h1 className="pt-4 pb-2 font">React Draggable</h1>
-                <h5 className="pb-2 font">You can drag the tables and create your own design!</h5>
+            <div className="pb-3 container">
+                <h5 className="pb-2 font text-center">Drag the tables and create your own design!</h5>
                 <div className="bg-transparent shadow-lg rounded">
                     <div className="box" style={{height: '600px', width: '1075px', position: 'relative', overflow: 'auto', padding: '0'}}>
                         <div style={{height: '600px', width: '1075px', padding: '10px'}}>
 
-                            <CapacityDisplay className="bg-dark float-right" totalNumberOfSeats={20} totalSeatsOccupied={4}/>
+                            <CapacityDisplay className="bg-dark float-right" totalNumberOfSeats={20} totalSeatsOccupied={14}/>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 125, y: 45}} >
                                 <div className="box rectangleTwoTopWidth">

@@ -30,10 +30,6 @@ function App () {
 
         </div>
 
-        <div className="container">
-            <DraggableCanvas />
-        </div>
-
         <Footer />
     </div>
   );

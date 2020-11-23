@@ -15,10 +15,11 @@ function MainContainer() {
 
     <div className="pt-6">
         <h1 className="pt-3">Table Management Coming Soon!</h1><hr></hr>
-      <p className="styleFont">Comprehensive restaurant management made easy.</p>
-      <p className="styleFont">Seat customers, make reservations, track orders,and
+
+        <p className="pt-2 pb-3 styleFont">Comprehensive restaurant management made easy.</p>
+        <p className="pb-3 styleFont">Seat customers, make reservations, track orders,and
           get a birds-eye view of your dining areas from one simple interface!</p>
-      <p className="styleFont">To see a demo  of a restaurant design click to the left.</p>
+        <p className="pb-3 styleFont">To see a demo  of a restaurant design, click to the left.</p>
 
         <CustomerInfo />
     </div>
