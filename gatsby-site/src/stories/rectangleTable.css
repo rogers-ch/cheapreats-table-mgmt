@@ -1,0 +1,49 @@
+/*
+    Created by:                Corey Rogers
+    Date submitted (v1):       10/26/2020
+    File:                      rectangleTable.css
+    File Description:          The css for the RectangleTable component.
+*/
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.chairHeight {
+  height: 3em;
+}
+
+.tableHeight {
+  height: 22em;
+}
+
+.tableWidth2 {
+  width: 22em;
+}
+
+.tableWidth4 {
+  width: 44em;
+}
+
+.tableWidth6 {
+  width: 66em;
+}
+
+.tableBorder {
+  border-radius: 3rem !important;
+}
+
+.topChairBorder {
+  border-top-left-radius: 3rem !important;
+  border-top-right-radius: 3rem !important;
+}
+.bottomChairBorder {
+  border-bottom-left-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+}
+
+.tableColor {
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+  height: 22em;
+}
