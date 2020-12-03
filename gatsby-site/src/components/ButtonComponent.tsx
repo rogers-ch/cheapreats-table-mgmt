@@ -1,5 +1,3 @@
-import React from "react";
-
 //interface for the ButtonComponent, use this to create the button
 interface IButtonComponent{
     userType: string,

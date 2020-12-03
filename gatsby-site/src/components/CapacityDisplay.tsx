@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export interface ICapacityDisplay {
+export interface ICapacityDisplay {     
     /**
      * Total number of occupied seats
      */

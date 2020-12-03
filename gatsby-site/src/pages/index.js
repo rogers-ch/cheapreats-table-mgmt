@@ -6,36 +6,38 @@
 */
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button';
 import '../css/index.css';
-import 'jquery/dist/jquery.js';
 import 'popper.js/dist/umd/popper.js';
-import 'bootstrap/dist/js/bootstrap.js';
 import '../css/App.css';
 import MainContainer from '../components/MainContainer';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import SideNav from "../components/sideNav";
 
-function App () {
+export class Home extends React.Component {
 
-    return (
-        <div className="App">
+    render(){
+        return (
+            <div className="App">
 
-            <div className="row">
-                <div className="colForSideBar" >
-                    <SideNav />
+                <div className="row">
+                    <div className="colForSideBar" >
+                        <SideNav />
+                    </div>
+                    <div className="colForRightSide" >
+                        <Nav />
+                        <MainContainer />
+                    </div>
+
                 </div>
-                <div className="colForRightSide" >
-                    <Nav />
-                    <MainContainer />
-                </div>
 
+                <Footer />
             </div>
+        );
+    }
 
-            <Footer />
-        </div>
-    );
 }
 
-export  default App;
+export default Home;
