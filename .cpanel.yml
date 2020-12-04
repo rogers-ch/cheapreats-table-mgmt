@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/levelupg/public_html/
+    - /bin/cp -R my-app/build/* $DEPLOYPATH

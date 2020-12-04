@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import styled from 'styled-components';
-import Modal from 'react-bootstrap/Modal'
+import {Modal} from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import DraggableCanvas from "./DraggableCanvas";
 
@@ -16,10 +16,10 @@ function SideNavButtonModal() {
     // Main model component that is returned
     return (
         <>
-            <Button onClick={handleShow}>
+            <ButtonStyling onClick={handleShow}>
                 {/* prop for the button component. This is the button on the main page that when clicked brings up the model*/}
                 View Demo
-            </Button>
+            </ButtonStyling>
 
             <Modal
                 show={show}
@@ -54,6 +54,21 @@ function SideNavButtonModal() {
         </>
     );
 }
+
+const ButtonStyling = styled.div`
+    border-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #dc3545;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 1px solid transparent;
+    display: inline-block;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+`;
 
 const Text= styled.div`
   padding: 0.5rem;
