@@ -1,5 +1,6 @@
 import React from 'react';
 import Draggable from 'react-draggable';
+import styled from 'styled-components';
 import {RectangleTable} from "../stories/RectangleTable";
 import {SquareTable} from "../stories/SquareTable";
 import {CapacityDisplay} from "./CapacityDisplay";
@@ -48,15 +49,15 @@ export class DraggableCanvas extends React.Component {
         const {deltaPosition, controlledPosition} = this.state;
         return (
             <div className="pb-3 container">
-                <h5 className="pb-2 font text-center">Drag the tables and create your own design!</h5>
-                <div className="bg-transparent shadow-lg rounded">
-                    <div className="box" style={{height: '600px', width: '1075px', position: 'relative', overflow: 'auto', padding: '0'}}>
+                <Pb2TextAlignCenter className="font">Drag the tables and create your own design!</Pb2TextAlignCenter>
+                <BgTransparentShadowLarge>
+                    <Box style={{height: '600px', width: '1075px', position: 'relative', overflow: 'auto', padding: '0'}}>
                         <div style={{height: '600px', width: '1075px', padding: '10px'}}>
 
-                            <CapacityDisplay className="bg-dark float-right" totalNumberOfSeats={20} totalSeatsOccupied={14}/>
+                            <CapacityDisplay className="styleForCapacityDisplay" totalNumberOfSeats={20} totalSeatsOccupied={14}/>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 125, y: 45}} >
-                                <div className="box rectangleTwoTopWidth">
+                                <Box className="rectangleTwoTopWidth">
                                     <RectangleTable
                                         tableID='T4'
                                         numOfChairs={2}
@@ -64,11 +65,11 @@ export class DraggableCanvas extends React.Component {
                                         occupancyStatus='Vacant'
                                         relativeSize = {0.3}
                                     />
-                                </div>
+                                </Box>
                             </Draggable>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 125, y: 225}} >
-                                <div className="box rectangleTwoTopWidth">
+                                <Box className="rectangleTwoTopWidth">
                                     <RectangleTable
                                         tableID='T9'
                                         numOfChairs={2}
@@ -76,11 +77,11 @@ export class DraggableCanvas extends React.Component {
                                         occupancyStatus='Occupied'
                                         relativeSize = {0.3}
                                     />
-                                </div>
+                                </Box>
                             </Draggable>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 425, y: -275}}>
-                               <div className="box rectangleFourTopWidth">
+                               <Box className="rectangleFourTopWidth">
                                     <div className="pt-5">
                                         <RectangleTable
                                             tableID='T2'
@@ -90,11 +91,11 @@ export class DraggableCanvas extends React.Component {
                                             relativeSize = {0.3}
                                         />
                                     </div>
-                                </div>
+                                </Box>
                             </Draggable>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 425, y: -135}}>
-                                <div className="box squareEightTopWidth">
+                                <Box className="squareEightTopWidth">
                                     <SquareTable
                                         tableID='T5'
                                         numOfChairs={7}
@@ -102,11 +103,11 @@ export class DraggableCanvas extends React.Component {
                                         occupancyStatus='Occupied'
                                         relativeSize = {0.3}
                                     />
-                                </div>
+                                </Box>
                             </Draggable>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 775, y: -295}}>
-                                <div className="box rectangleFourTopWidth">
+                                <Box className="rectangleFourTopWidth">
                                     <RectangleTable
                                         tableID='T7'
                                         numOfChairs={4}
@@ -114,17 +115,33 @@ export class DraggableCanvas extends React.Component {
                                         occupancyStatus='Reserved'
                                         relativeSize = {0.3}
                                     />
-                                </div>
+                                </Box>
                             </Draggable>
 
 
                         </div>
-                    </div>
-                </div>
+                    </Box>
+                </BgTransparentShadowLarge>
             </div>
         );
     }
 }
+
+const Box = styled.div`
+        box-sizing: border-box;
+    `;
+
+const Pb2TextAlignCenter = styled.div`
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+`;
+
+const BgTransparentShadowLarge = styled.div`
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    border-radius: 0.25rem;
+    background-color: transparent;
+`;
 
 class RemWrapper extends React.Component {
     // PropTypes is not available in this environment, but here they are.
