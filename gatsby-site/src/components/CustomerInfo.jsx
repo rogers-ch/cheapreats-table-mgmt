@@ -1,11 +1,12 @@
 import React from "react";
 import DiningRoomLightBackground from '../images/DiningRoomLightBackground.png';
 import './../css/App.css';
+import styled from 'styled-components';
 function CustomerInfo(){
     return(
         <div>
             <hr></hr>
-            <h4 className="py-4">Customized Management for Restaurant Owners</h4>
+            <H4>Customized Management for Restaurant Owners</H4>
             <div className="styleFont customerInfoStyle" >
 
                 <ul>
@@ -21,9 +22,21 @@ function CustomerInfo(){
                 </ul>
 
             </div>
-            <img className="py-4 w-75" src={DiningRoomLightBackground}  alt="Dining Room Demo with Five Tables" />
+            <IMG src={DiningRoomLightBackground}  alt="Dining Room Demo with Five Tables" />
         </div>
     );
 }
+
+/**
+ * Styled components css
+ */
+const H4 = styled.h4`
+    padding-top: 1.5rem;
+`;
+
+const IMG = styled.img`
+    padding-top: 1.5rem;
+    width: 75%;
+`;
 
 export default CustomerInfo;

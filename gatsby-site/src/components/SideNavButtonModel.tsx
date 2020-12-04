@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import styled from 'styled-components';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 import DraggableCanvas from "./DraggableCanvas";
@@ -15,7 +16,7 @@ function SideNavButtonModal() {
     // Main model component that is returned
     return (
         <>
-            <Button className="btn-danger btn-lg border-light rounded NavBarFont buttonWidth mt-2" onClick={handleShow}>
+            <Button onClick={handleShow}>
                 {/* prop for the button component. This is the button on the main page that when clicked brings up the model*/}
                 View Demo
             </Button>
@@ -32,8 +33,8 @@ function SideNavButtonModal() {
                 <Modal.Body>
 
                     <DraggableCanvas />
-                    <div className="p-2">
-                        <h5 className="text-center pt-4">Future Table Management Features:</h5>
+                    <Text>
+                        <H5>Future Table Management Features:</H5>
                         <ul>
                             <li className="font">Build your restaurant with tables of all shapes and sizes.</li>
                             <li className="font">Easily edit your design to match changes in your dining room.</li>
@@ -43,7 +44,7 @@ function SideNavButtonModal() {
                                 tables will become available.
                             </li>
                         </ul>
-                    </div>
+                    </Text>
 
 
                 </Modal.Body>
@@ -53,5 +54,15 @@ function SideNavButtonModal() {
         </>
     );
 }
+
+const Text= styled.div`
+  padding: 0.5rem;
+`;
+
+const H5= styled.h5`
+  padding-top: 1.5rem;
+  text-align: center;
+`;
+
 
 export default SideNavButtonModal;
