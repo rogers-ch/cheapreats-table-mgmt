@@ -1,9 +1,7 @@
 import React from 'react';
 import '../css/navBar.css';
 import SideNavButtonModal from "./SideNavButtonModel";
-import ButtonModal from "./ButtonModal"
-import DinningRoomImage from "../images/DinningRoomImage.png";
-import SquareTableImage from "../images/SquareTableImage.png";
+
 function SideNav() {
 
     return (

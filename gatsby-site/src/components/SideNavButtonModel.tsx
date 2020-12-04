@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react';
-import CanvasDemo from "./CanvasDemo";
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 import DraggableCanvas from "./DraggableCanvas";
