@@ -15,7 +15,7 @@ type getTableSizeType = (
     right: number,
 ) => number;
 
-export interface ISquareTable {
+export interface ISquareTable2 {
     /**
      * The unique identifier for the table
      */
@@ -48,7 +48,7 @@ enum occupancyStatusTypes {
  * Primary UI component for user interaction
  * Square Table
  */
-export const SquareTable2: React.FC<ISquareTable> = ({
+export const SquareTable2: React.FC<ISquareTable2> = ({
     tableID = 'T1',
     partyName = 'Null',
     occupancyStatus = occupancyStatusTypes.Vacant,
