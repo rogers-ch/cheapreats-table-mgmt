@@ -13,6 +13,7 @@ import DraggableCanvas from './DraggableCanvas';
 import CustomerInfo from './CustomerInfo'
 
 import SideNav from "./sideNav";
+import {RectangleTable2} from "../stories";
 
 function App () {
 

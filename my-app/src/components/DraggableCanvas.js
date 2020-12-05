@@ -1,6 +1,6 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-import {RectangleTable, SquareTable} from "../stories";
+import {RectangleTable2, SquareTable2} from "../stories";
 import {CapacityDisplay} from "./CapacityDisplay";
 
 export class DraggableCanvas extends React.Component {
@@ -56,24 +56,51 @@ export class DraggableCanvas extends React.Component {
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 125, y: 45}} >
                                 <div className="box rectangleTwoTopWidth">
-                                    <RectangleTable
+                                    <RectangleTable2
                                         tableID='T4'
-                                        numOfChairs={2}
                                         partyName=''
                                         occupancyStatus='Vacant'
                                         relativeSize = {0.3}
+                                        chairs={[
+                                            {
+                                                position: 'top',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true
+                                            },
+                                        ]}
                                     />
                                 </div>
                             </Draggable>
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 125, y: 225}} >
                                 <div className="box rectangleTwoTopWidth">
-                                    <RectangleTable
+                                    <RectangleTable2
                                         tableID='T9'
                                         numOfChairs={2}
                                         partyName='Tina'
                                         occupancyStatus='Occupied'
                                         relativeSize = {0.3}
+                                        chairs={[
+                                            {
+                                                position: 'top',
+                                                isSeated: true,
+                                                occupiedBy: 'Suzy',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: true,
+                                                occupiedBy: 'Tina',
+                                                isVisible: true
+                                            },
+                                        ]}
                                     />
                                 </div>
                             </Draggable>
@@ -81,12 +108,37 @@ export class DraggableCanvas extends React.Component {
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 425, y: -275}}>
                                <div className="box rectangleFourTopWidth">
                                     <div className="pt-5">
-                                        <RectangleTable
+                                        <RectangleTable2
                                             tableID='T2'
-                                            numOfChairs={4}
                                             partyName='Sarah'
                                             occupancyStatus='Occupied'
                                             relativeSize = {0.3}
+                                            chairs={[
+                                                {
+                                                    position: 'top',
+                                                    isSeated: true,
+                                                    occupiedBy: 'Sarah',
+                                                    isVisible: true,
+                                                },
+                                                {
+                                                    position: 'top',
+                                                    isSeated: false,
+                                                    occupiedBy: '',
+                                                    isVisible: true
+                                                },
+                                                {
+                                                    position: 'bottom',
+                                                    isSeated: false,
+                                                    occupiedBy: '',
+                                                    isVisible: true
+                                                },
+                                                {
+                                                    position: 'bottom',
+                                                    isSeated: true,
+                                                    occupiedBy: 'Alex',
+                                                    isVisible: true,
+                                                },
+                                            ]}
                                         />
                                     </div>
                                 </div>
@@ -94,11 +146,60 @@ export class DraggableCanvas extends React.Component {
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 425, y: -135}}>
                                 <div className="box squareEightTopWidth">
-                                    <SquareTable
+                                    <SquareTable2
                                         tableID='T5'
-                                        numOfChairs={7}
                                         partyName='Scott'
                                         occupancyStatus='Occupied'
+                                        chairs={[
+                                            {
+                                                position: 'top',
+                                                isSeated: true,
+                                                occupiedBy: 'Scott',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'top',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true
+                                            },
+                                            {
+                                                position: 'left',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true
+                                            },
+                                            {
+                                                position: 'left',
+                                                isSeated: true,
+                                                occupiedBy: 'Corey',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'right',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: false,
+                                            },
+                                            {
+                                                position: 'right',
+                                                isSeated: true,
+                                                occupiedBy: 'Jack',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: true,
+                                                occupiedBy: 'Sam',
+                                                isVisible: true,
+                                            },
+                                        ]}
                                         relativeSize = {0.3}
                                     />
                                 </div>
@@ -106,12 +207,37 @@ export class DraggableCanvas extends React.Component {
 
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 775, y: -295}}>
                                 <div className="box rectangleFourTopWidth">
-                                    <RectangleTable
+                                    <RectangleTable2
                                         tableID='T7'
-                                        numOfChairs={4}
                                         partyName='Dmytro'
                                         occupancyStatus='Reserved'
                                         relativeSize = {0.3}
+                                        chairs={[
+                                            {
+                                                position: 'top',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true
+                                            },
+                                            {
+                                                position: 'top',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true,
+                                            },
+                                            {
+                                                position: 'bottom',
+                                                isSeated: false,
+                                                occupiedBy: '',
+                                                isVisible: true
+                                            },
+                                        ]}
                                     />
                                 </div>
                             </Draggable>

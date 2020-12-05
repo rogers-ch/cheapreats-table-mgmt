@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {IRectangleTable} from "./RectangleTable";
 
 /**
  * Primary UI component for user interaction

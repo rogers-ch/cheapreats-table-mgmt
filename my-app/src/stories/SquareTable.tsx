@@ -49,7 +49,7 @@ export const SquareTable: React.FC<ISquareTable>
      * This function will calculate the number of chairs for each table side
      */
     function getChairNumOnSide(num:number){
-        if(num%4==0){
+        if(num%4===0){
             return num/4;
         }
         else{
