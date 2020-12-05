@@ -2,3 +2,8 @@ export * from './RectangleTable';
 export * from './SquareTable';
 export * from './CircleTable';
 export * from './CapacityDisplay';
+export * from './Chair';
+export * from './ChairRow';
+export * from './CircleTable2';
+export * from './RectangleTable2';
+export * from './SquareTable2';
