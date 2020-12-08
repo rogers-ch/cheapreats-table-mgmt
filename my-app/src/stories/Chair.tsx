@@ -143,7 +143,7 @@ const BaseChair = styled.div<Pick<IChair, 'isVisible' | 'isSeated'>>`
 const TopChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
     border-top-left-radius: ${({ relativeSize }) => relativeSize * 3}rem;
     border-top-right-radius: ${({ relativeSize }) => relativeSize * 3}rem;
-    height: ${({ relativeSize }) => relativeSize * 2}rem;
+    height: ${({ relativeSize }) => relativeSize * 3}rem;
     width: ${({ relativeSize }) => relativeSize * 10}rem;
     margin-bottom: ${({ relativeSize }) => relativeSize * 0.25}rem;
     margin-left: auto;
@@ -153,7 +153,7 @@ const TopChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
 const LeftChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
     border-top-left-radius: ${({ relativeSize }) => relativeSize * 3}rem;
     border-bottom-left-radius: ${({ relativeSize }) => relativeSize * 3}rem;
-    width: ${({ relativeSize }) => relativeSize * 2}rem;
+    width: ${({ relativeSize }) => relativeSize * 3}rem;
     height: ${({ relativeSize }) => relativeSize * 10}rem;
     margin: ${({ relativeSize }) => relativeSize * 1.25}rem;
 `;
@@ -161,7 +161,7 @@ const LeftChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
 const RightChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
     border-top-right-radius: ${({ relativeSize }) => relativeSize * 3}rem;
     border-bottom-right-radius: ${({ relativeSize }) => relativeSize * 3}rem;
-    width: ${({ relativeSize }) => relativeSize * 2}rem;
+    width: ${({ relativeSize }) => relativeSize * 3}rem;
     height: ${({ relativeSize }) => relativeSize * 10}rem;
     margin: ${({ relativeSize }) => relativeSize * 1.25}rem;
 `;
@@ -169,7 +169,7 @@ const RightChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
 const BottomChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
     border-bottom-left-radius: ${({ relativeSize }) => relativeSize * 3}rem;
     border-bottom-right-radius: ${({ relativeSize }) => relativeSize * 3}rem;
-    height: ${({ relativeSize }) => relativeSize * 2}rem;
+    height: ${({ relativeSize }) => relativeSize * 3}rem;
     width: ${({ relativeSize }) => relativeSize * 10}rem;
     margin-top: ${({ relativeSize }) => relativeSize * 0.25}rem;
     margin-left: auto;
@@ -180,7 +180,7 @@ const TextBase = styled.div<Pick<IChair, 'relativeSize'>>`
     color: #ffffff;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: ${({ relativeSize }) => relativeSize * 1}rem;
+    font-size: 0.8rem;
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
@@ -189,7 +189,7 @@ const TextBase = styled.div<Pick<IChair, 'relativeSize'>>`
 
 const TextTopBottom = styled(TextBase)<Pick<IChair, 'relativeSize'>>`
     width: ${({ relativeSize }) => relativeSize * 9}rem;
-    margin-left: ${({ relativeSize }) => relativeSize * 0.75}rem;
+    margin-left: ${({ relativeSize }) => relativeSize * 0.65}rem;
     padding-top: ${({ relativeSize }) => relativeSize * 0.35}rem;
 `;
 
@@ -208,5 +208,5 @@ const RoundChair = styled(BaseChair)<Pick<IChair, 'relativeSize'>>`
 `;
 
 const RoundText = styled(TextBase)<Pick<IChair, 'relativeSize'>>`
-    padding: ${({ relativeSize }) => relativeSize * 2.5}em 0;
+    padding: ${({ relativeSize }) => relativeSize * 2.0}em 0;
 `;

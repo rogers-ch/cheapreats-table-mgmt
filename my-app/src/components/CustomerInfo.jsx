@@ -8,7 +8,7 @@ function CustomerInfo(){
             <h4 className="py-4">Customized Management for Restaurant Owners</h4>
             <div className="styleFont customerInfoStyle" >
 
-                <ul>
+                <ul className="list-unstyled">
                     <li>CheaprEats Table Management gives you the power to manage your entire restaurant from a
                         single dashboard!</li><br/>
 
@@ -21,7 +21,7 @@ function CustomerInfo(){
                 </ul>
 
             </div>
-            <img className="py-4 w-75" src={DiningRoomLightBackground}  alt="Dining Room Demo with Five Tables" />
+
         </div>
     );
 }

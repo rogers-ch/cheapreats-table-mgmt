@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Roboto+Slab:wght@500&display=swap');
 
+.buttonWidth{
+  width: 25%;
+}
+
 .font{
   padding-top: 1em;
   font-family: 'Cantata One', serif;
 }
 
 .rectangleTwoTopWidth{
-  width: 105px;
+  width: 140px;
 }
 
 .squareEightTopWidth{
-  width: 230px;
+  width: 300px;
 }
 .rectangleFourTopWidth{
-  width: 230px;
+  width: 270px;
 }
 .rectangleSixthTopWidth{
   width: 430px;
+}
+
+.circleTableWidth{
+  width: 290px;
 }
 
 .styleFont{
@@ -91,7 +99,10 @@ nav{
 .pt-6 {
     padding-top: 3.5rem;
     padding-bottom: 1rem;
-    background-color: rgb(245, 245, 245);
+}
+
+.grayBackground{
+  background-color: rgb(245, 245, 245);
 }
 
 .colForRightSide{
@@ -104,6 +115,10 @@ nav{
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
 
+}
+
+.spacer{
+  height: 60px;
 }
 
 
