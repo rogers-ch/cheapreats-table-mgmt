@@ -14,22 +14,21 @@ import CustomerInfo from './CustomerInfo'
 
 import SideNav from "./sideNav";
 import {RectangleTable2} from "../stories";
+import Modal from "react-bootstrap/Modal";
+import DraggableDemoFront from "./DraggableDemoFront";
 
 function App () {
 
   return (
     <div className="App">
 
-        <div className="row">
-            <div className="colForSideBar" >
-                <SideNav />
-            </div>
-            <div className="colForRightSide" >
-                <Nav />
-                <MainContainer />
-            </div>
-
+        <div className="container">
+            <Nav />
+            <MainContainer />
         </div>
+        <div className="spacer" id="demo"></div>
+
+        <DraggableDemoFront />
 
         <Footer />
     </div>

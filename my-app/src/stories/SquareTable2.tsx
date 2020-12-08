@@ -234,8 +234,9 @@ interface ITableInfo {
 const TableInfo = styled.div<ITableInfo>`
     color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     font-weight: bold;
+    text-align: left;
     margin-top: ${({ relativeSize }) => 2 * relativeSize}rem;
     margin-left: ${({ relativeSize }) => 3 * relativeSize}rem;
     white-space: pre-line;

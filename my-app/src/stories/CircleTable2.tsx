@@ -190,8 +190,8 @@ const TableInfo = styled.div`
     text-align: center;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 0.8rem;
-    padding: calc(var(--s) / 2.4) 0;
+    font-size: 1.0rem;
+    padding: calc(var(--s) / 4) 0;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
