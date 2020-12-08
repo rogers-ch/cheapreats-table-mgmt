@@ -1,6 +1,5 @@
 /*
-    Created by:                Corey Rogers
-    Date submitted (v2):       ___________
+    Created by:                Level Up team
     File:                      RectangleTable.tsx
     File Description:          Rectangle table in horizontal orientation. Resizable based on number of chairs.
 */

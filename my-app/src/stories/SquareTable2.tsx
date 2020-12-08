@@ -1,3 +1,13 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      SquareTable2.tsx
+    File Description:          This component creates a square table with chairs. The
+                               table automatically resizes to accommodate the number of chairs
+                               from the chairs array and places the chairs in the correct position
+                               based on the information in the chairs array.
+*/
+
 /**
  * Documentation – the order of chairs are in the chairs array will populate the table from top left to the bottom right
  * “the purpose of the order in the array is to populate the chairs from top left to bottom right”

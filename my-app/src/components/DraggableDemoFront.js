@@ -1,3 +1,11 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      DraggableDemoFront.js
+    File Description:          This component creates the draggable demo for the front page. It includes the
+                               example data for the tables and the capacity component in the demo.
+*/
+
 import React from 'react';
 import Draggable from 'react-draggable';
 import {CircleTable2, RectangleTable2, SquareTable2} from "../stories";
@@ -49,11 +57,15 @@ export class DraggableCanvas extends React.Component {
             <div className="pb-3 mb-5">
                 <h5 className="pb-2 text-center">Drag the tables and create your own design!</h5>
                 <div className="">
+
+                    {/* Draggable canvas to hold the tables */}
                     <div className="box bg-transparent shadow-lg rounded mx-auto" style={{height: '700px', width: '1120px', position: 'relative', overflow: 'auto', padding: '0'}}>
                         <div style={{height: '700px', width: '1100px', padding: '10px'}}>
 
+                            {/* Capacity display component */}
                             <CapacityDisplay className="bg-dark float-right" totalNumberOfSeats={21} totalSeatsOccupied={11}/>
 
+                            {/* Draggable table 1 */}
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 150, y: 93}} >
                                 <div className="box rectangleTwoTopWidth">
                                     <RectangleTable2
@@ -77,12 +89,13 @@ export class DraggableCanvas extends React.Component {
                                         ]}
                                     />
                                 </div>
-                            </Draggable>
+                            </Draggable> {/* End draggable table 1 */}
 
+                            {/* Draggable table 4 */}
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 520, y: 215}} >
                                 <div className="box rectangleTwoTopWidth">
                                     <RectangleTable2
-                                        tableID='T2'
+                                        tableID='T4'
                                         partyName='Tina'
                                         occupancyStatus='Occupied'
                                         relativeSize = {0.4}
@@ -102,8 +115,9 @@ export class DraggableCanvas extends React.Component {
                                         ]}
                                     />
                                 </div>
-                            </Draggable>
+                            </Draggable> {/* End draggable table 4 */}
 
+                            {/* Draggable table 5 */}
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 770, y: -142}}>
                                 <div className="box squareEightTopWidth">
                                     <SquareTable2
@@ -163,12 +177,13 @@ export class DraggableCanvas extends React.Component {
                                         relativeSize = {0.4}
                                     />
                                 </div>
-                            </Draggable>
+                            </Draggable> {/* End draggable table 5 */}
 
+                            {/* Draggable table 3 */}
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 90, y: -250}}>
                                 <div className="box rectangleFourTopWidth">
                                     <RectangleTable2
-                                        tableID='T4'
+                                        tableID='T3'
                                         partyName='Dmytro'
                                         occupancyStatus='Reserved'
                                         relativeSize = {0.4}
@@ -200,12 +215,13 @@ export class DraggableCanvas extends React.Component {
                                         ]}
                                     />
                                 </div>
-                            </Draggable>
+                            </Draggable> {/* End draggable table 3 */}
 
+                            {/* Draggable table 2 */}
                             <Draggable bounds="parent" {...dragHandlers} defaultPosition={{x: 450, y: -750}} >
                                 <div className="box circleTableWidth">
                                     <CircleTable2
-                                        tableID='T3'
+                                        tableID='T2'
                                         partyName='Corey'
                                         occupancyStatus='Occupied'
                                         relativeSize = {0.5}
@@ -255,11 +271,10 @@ export class DraggableCanvas extends React.Component {
                                         ]}
                                     />
                                 </div>
-                            </Draggable>
-
+                            </Draggable> {/* End draggable table 2 */}
 
                         </div>
-                    </div>
+                    </div> {/* End Draggable Canvas */}
                 </div>
             </div>
         );

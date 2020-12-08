@@ -1,6 +1,10 @@
-//10/23/2020
-//This is footer for the landing page
-//It will be using bootstrap
+/*
+    Created by:                Level Up team
+    Date submitted (v1):       10/26/2020
+    File:                      Footer.jsx
+    File Description:          This component creates a responsive footer the CheaprEats Table Management homepage
+                               using Bootstrap.
+*/
 
 import React from 'react';
 import styled from "styled-components";

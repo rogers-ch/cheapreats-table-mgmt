@@ -1,3 +1,9 @@
+/*
+    Created by:                Level Up team
+    File:                      SquareTable.tsx
+    File Description:          Square table that is resizable based on number of chairs.
+*/
+
 import React from 'react';
 import styled from 'styled-components';
 

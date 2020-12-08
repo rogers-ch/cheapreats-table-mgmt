@@ -1,3 +1,12 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      ChairRow.tsx
+    File Description:          This component creates a row of chairs for a RectangleTable2 or SquareTable2
+                               component. Creates the correct chair row orientation based on whether the
+                               row is on the top/bottom or left/right sides of the table.
+*/
+
 import React from 'react';
 import styled from 'styled-components';
 import { Chair, IChair } from './Chair';

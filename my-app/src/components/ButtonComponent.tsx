@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    File:                      ButtonComponent.tsx
+    File Description:          This component creates a styled button with text that renders based on the
+                               'userType' prop.
+*/
+
 import React from "react";
 
 //interface for the ButtonComponent, use this to create the button

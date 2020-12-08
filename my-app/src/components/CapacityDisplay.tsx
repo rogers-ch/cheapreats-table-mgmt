@@ -1,3 +1,13 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            11/23/2020
+    File:                      CapacityDisplay.tsx
+    File Description:          This component shows the current capacity information for
+                               a dining area based on the total number of chairs and
+                               the total number of occupied chairs. Displays capacity in a pie
+                               chart and with text.
+*/
+
 import React from 'react';
 import styled from 'styled-components';
 

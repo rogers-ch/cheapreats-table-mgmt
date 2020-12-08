@@ -1,6 +1,6 @@
 /*
-    Created by:                Corey Rogers
-    Date submitted (v1):       11/16/2020
+    Created by:                Level Up team
+    Date submitted (v1):       11/23/2020
     File:                      CapacityDisplay.stories.js
     File Description:          The Storybook file for the CapacityDisplay component.
 */

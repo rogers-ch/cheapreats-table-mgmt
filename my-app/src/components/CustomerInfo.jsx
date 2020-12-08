@@ -1,5 +1,11 @@
+/*
+    Created by:                Level Up team
+    File:                      CustomerInfo.jsx
+    File Description:          This component contains additional information for customers about the
+                               table management system.
+*/
+
 import React from "react";
-import DiningRoomLightBackground from '../images/DiningRoomLightBackground.png';
 
 function CustomerInfo(){
     return(

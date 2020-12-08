@@ -1,5 +1,5 @@
 /*
-    Created by:                Corey Rogers
+    Created by:                Level Up team
     Date submitted (v1):       10/26/2020
     File:                      RectangleTable.stories.js
     File Description:          The Storybook file for the RectangleTable component.

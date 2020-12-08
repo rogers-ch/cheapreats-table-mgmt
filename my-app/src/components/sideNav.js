@@ -1,9 +1,13 @@
+/*
+    Created by:                Level Up team
+    File:                      sideNav.js
+    File Description:          This component creates side navigation bar that includes the SideNavButtonModal
+                               component, which displays the demo in a modal.
+*/
+
 import React from 'react';
 import '../css/navBar.css';
 import SideNavButtonModal from "./SideNavButtonModel";
-import ButtonModal from "./ButtonModal"
-import DinningRoomImage from "../images/DinningRoomImage.png";
-import SquareTableImage from "../images/SquareTableImage.png";
 function SideNav() {
 
     return (

@@ -1,13 +1,12 @@
 /*
     Created by:                Level Up team
-    Date submitted (v1):       10/26/2020
+    Date submitted (v4):       12/08/2020
     File:                      MainContainer.js
-    File Description:          This component Contains the text and ButtonModals for the Table Management homepage.
+    File Description:          This component Contains the text and Button for the Table Management homepage.
 */
 
 import React from 'react';
 import '../css/App.css';
-import CustomerInfo from "./CustomerInfo";
 import Button from "react-bootstrap/Button";
 
 function MainContainer() {
@@ -19,7 +18,7 @@ function MainContainer() {
 
         <h4 className="py-4">Comprehensive restaurant management made easy.</h4>
 
-        <p className="pb-3 styleFont">Seat customers, make reservations, track orders,and
+        <p className="pb-3 styleFont">Seat customers, make reservations, track orders, and
           get a bird's-eye view of your dining areas from one simple interface!</p>
         <p className="pb-3 styleFont">Design dining areas and customize your tables with ease. </p>
         <p className="pb-3 styleFont">Track customer interactions
@@ -34,9 +33,8 @@ function MainContainer() {
             <li className="pb-3 font">Get up-to-date occupancy information for your entire restaurant.</li>
         </ul>
 
-
+        {/* This is the button on the main page that when clicked takes the user to the draggable demo*/}
         <Button className="btn-danger btn-lg border-light rounded NavBarFont buttonWidth mt-2 pb-3" href="#demo">
-            {/* This is the button on the main page that when clicked takes the user to the draggable demo*/}
             Try the Demo!
         </Button>
 

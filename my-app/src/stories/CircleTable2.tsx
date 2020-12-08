@@ -1,3 +1,11 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      CircleTable2.tsx
+    File Description:          This component creates a circular table with chairs around the table border. The
+                               table automatically resizes to accommodate the number of chairs from the chairs prop.
+*/
+
 import React from 'react';
 import styled from 'styled-components';
 import { Chair, IChair } from './Chair';

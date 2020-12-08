@@ -1,3 +1,13 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      Chair.tsx
+    File Description:          This component creates chairs for use in the table components. Chair styles adjust
+                               to create the correct chair based on whether the chair is round or rectangular and
+                               which side of the table the chair is placed on. Chair styles also adjust based on
+                               whether a chair is visible or not and whether a chair is occupied.
+*/
+
 import React from 'react';
 import styled from 'styled-components';
 import { MainTheme } from '../Themes'

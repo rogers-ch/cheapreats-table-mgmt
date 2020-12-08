@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      SquareTable2.stories.jsx
+    File Description:          Creates the stories for the SquareTable2 component for display in Storybook.
+*/
+
 import React from 'react';
 import { SquareTable2 } from './SquareTable2';
 

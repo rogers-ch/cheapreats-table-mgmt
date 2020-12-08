@@ -1,7 +1,14 @@
+/*
+    Created by:                Level Up team
+    File:                      SideNavButtonModel.tsx
+    File Description:          This component creates a button that displays a modal when clicked. The modal
+                               holds a DraggableCanvas with a demo of the table management system and
+                               information about the table management system features.
+*/
+
 import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
-import CanvasDemo from "./CanvasDemo";
 import DraggableCanvas from "./DraggableCanvas";
 
 function SideNavButtonModal() {

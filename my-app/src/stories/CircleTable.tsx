@@ -1,3 +1,9 @@
+/*
+    Created by:                Level Up team
+    File:                      CircleTable.tsx
+    File Description:          This component creates a circular table with no chairs.
+*/
+
 import React from 'react';
 import styled from "styled-components";
 

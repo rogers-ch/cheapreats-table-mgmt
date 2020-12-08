@@ -1,3 +1,12 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            11/23/2020
+    File:                      DraggableCanvas.js
+    File Description:          This component creates the draggable canvas for the demo in the SideNavButtonModal
+                               component. It includes the example data for the tables and the capacity display
+                               component in the demo.
+*/
+
 import React from 'react';
 import Draggable from 'react-draggable';
 import {RectangleTable2, SquareTable2} from "../stories";

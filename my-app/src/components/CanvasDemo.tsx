@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    File:                      CanvasDemo.tsx
+    File Description:          This component creates a static dining area demo using RectangleTable
+                               and SquareTable components.
+*/
+
 import React from 'react';
 import {RectangleTable, SquareTable} from "../stories";
 import '../css/canvas.css';

@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    Date submitted:            12/08/2020
+    File:                      RectangleTable2.stories.jsx
+    File Description:          Creates the stories for the RectangleTable2 component for display in Storybook.
+*/
+
 import React from 'react';
 import { RectangleTable2 } from './RectangleTable2';
 

@@ -1,5 +1,5 @@
 /*
-    Created by:                Corey Rogers
+    Created by:                Level Up team
     Date submitted (v1):       10/26/2020
     File:                      Nav.js
     File Description:          This component creates a responsive navigation bar the CheaprEats Table Management homepage.
@@ -28,7 +28,7 @@ function Nav() {
       <div className="container">
 
           {/* Logo */}
-          <a className="navbar-brand text-danger" href="index.php#">
+          <a className="navbar-brand text-danger" href="https://www.cheapreats.com/">
               <img src={ logoForCheaprEats } alt="logo For CheaprEats " style={ img }></img>
              CheaprEats
           </a>

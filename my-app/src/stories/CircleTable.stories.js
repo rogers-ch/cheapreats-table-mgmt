@@ -1,3 +1,9 @@
+/*
+    Created by:                Level Up team
+    File:                      CircleTable.stories.jsx
+    File Description:          Creates the stories for the CircleTable component for display in Storybook.
+*/
+
 import React from 'react';
 
 import { CircleTable } from './CircleTable';

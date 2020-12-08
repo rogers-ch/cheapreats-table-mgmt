@@ -1,3 +1,10 @@
+/*
+    Created by:                Level Up team
+    File:                      ButtonModal.jsx
+    File Description:          This component creates a button that will display a modal when clicked. The
+                               modal displays text information and an image based on the props it receives.
+*/
+
 import React,{useState,useEffect} from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
